@@ -30,10 +30,10 @@ else:
 
 # Enter mobile number
 user_mob_num = input("Enter a UK mobile number (starting in 07 and without spaces): ")
-if len(user_mob_num) == 11 and user_mob_num.isdigit():
+if len(user_mob_num) == 11 and user_mob_num.isdigit() and "07" in user_mob_num:
     print(user_mob_num)
 else:
-    print("Please enter a UK mobile number: ")
+    print("ERROR: Please enter a valid UK mobile number: ")
 
 # Enter age (applicant must be over 18)
 user_age = input("Enter your age: ")
