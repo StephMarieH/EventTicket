@@ -36,7 +36,7 @@ else:
 
 # Enter age (applicant must be over 18)
 user_age = input("Enter your age: ")
-if user_age.isnumeric and user_age >= 18:
+if user_age.isdigit and user_age >= 18:
 # Thank user for registering, their ticket will be emailed 24hrs before event.
     print("Thankyou for registering, your ticket will be emailed to you 24hrs before the event starts.")
 else:
