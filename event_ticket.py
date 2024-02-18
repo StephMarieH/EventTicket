@@ -13,19 +13,20 @@ print(f"{LINE}\n{heading}\n{LINE}")
 # Enter first name
 user_name = input("Enter your first name: ")
 user_name = user_name.lower()
-print(user_name)
+
 
 # Enter surname
 user_surname = input("Enter your surname: ")
 user_surname = user_surname.lower()
-print(user_surname)
+
 
 # Enter email address
-user_email = input("Enter your email address: ")
+
+user_email = input("Enter your email address: ")  
 if "@" in user_email and "." in user_email:
-    print(user_email)
+    user_email = user_email    
 else:
-    print("Invalid email address entered")
+    print("Error")
 
 # Enter mobile number
 user_mob_num = input("Enter a UK mobile number (starting in 07 and without spaces): ")
